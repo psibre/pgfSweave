@@ -1,3 +1,35 @@
+commit 40a152d1531f4f62c101c92ef6afcd3630f148cd
+Author: cameronbracken <cameron.bracken@gmail.com>
+Date:   Sun Jan 16 16:57:32 2011 -0700
+
+    Prep for next release
+
+ ChangeLog                                          |  152 ++++++++++++++++++++
+ DESCRIPTION                                        |    2 +-
+ NEWS                                               |    1 +
+ inst/doc/figs/fig-normalSweave.pdf                 |  Bin 2937 -> 2965 bytes
+ inst/doc/figs/fig-pgfSweave-hist.pdf               |  Bin 16299 -> 16286 bytes
+ inst/doc/figs/fig-pgfSweave-tikz-hist.pdf          |  Bin 26907 -> 26912 bytes
+ inst/doc/pgfSweave-example-Rnw.in                  |    9 +-
+ inst/doc/pgfSweave-example-tex.in                  |   20 ++-
+ inst/doc/pgfSweave-example.pdf                     |  Bin 76150 -> 78139 bytes
+ inst/doc/pgfSweave.Rnw                             |   87 ++++++------
+ inst/doc/pgfSweave.pdf                             |  Bin 276681 -> 278812 bytes
+ inst/doc/pgfSweave_hans.pdf                        |  Bin 236103 -> 236105 bytes
+ inst/misc/vignette-src/Makefile                    |   13 +-
+ .../vignette-src/pgfSweave-vignette-source.Rnw     |   73 +++++-----
+ inst/tests/Makefile                                |    2 +-
+ 15 files changed, 260 insertions(+), 99 deletions(-)
+
+commit fcad9715f3ed976c77c7ac99fa4099123d6e976e
+Author: cameronbracken <cameron.bracken@gmail.com>
+Date:   Sun Jan 16 16:56:13 2011 -0700
+
+    Improve automatic insertion of \pgfrealjobname
+
+ R/pgfSweaveDriver.R |   66 +++++++++++++++++++++++++++++---------------------
+ 1 files changed, 38 insertions(+), 28 deletions(-)
+
 commit 199bb28ffa62532c8df42500519ef4516c04e5fc
 Author: cameronbracken <cameron.bracken@gmail.com>
 Date:   Sun Jan 16 14:58:51 2011 -0700

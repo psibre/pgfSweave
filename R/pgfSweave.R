@@ -18,12 +18,15 @@ pgfSweave <- function(file, compile.tex = TRUE, syntax = getOption("SweaveSyntax
         #texlive on linux/macosx needs the --jobname flag
         if(.Platform$OS.type != 'windows'){
             flag <- paste('--jobname=',bn,sep='')
-    
-            #set special versions of calls to latex or pdflatex
-            if(is.null(match.call()$pdf))
-                Sys.setenv(LATEX=paste("latex",flag))
-            else
-                Sys.setenv(PDFLATEX=paste("pdflatex",flag))
+            
+            # fix for openSUSE
+            if(!file.exists('/etc/SuSE-release')){
+                #set special versions of calls to latex or pdflatex
+                if(is.null(match.call()$pdf))
+                    Sys.setenv(LATEX=paste("latex",flag))
+                else
+                    Sys.setenv(PDFLATEX=paste("pdflatex",flag))
+            }
         }
     
         #run texi2dvi on the tex file        

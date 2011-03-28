@@ -1,6 +1,11 @@
 Please see the README.md file for development info
 
 --------------------------
+Version 1.1.4 - 2011-03-28
+--------------------------
+* [FIXED] Fix for compiling on openSUSE
+
+--------------------------
 Version 1.1.3 - 2011-01-07
 --------------------------
 * [NEW] Use the "null device" to avoid generation of Rplots.pdf, as suggested 
