@@ -14,7 +14,7 @@ cacheSweave.
 
 Main development of pgfSweave takes place on the Github site [https://github.com/cameronbracken/pgfSweave]().  Precompiled packages can be found on the R-Forge site, [http://r-forge.r-project.org/projects/pgfsweave/]()
 
-__Please read the package vignette `inst/doc/pgfSweave.pdf` for more information on installation and usage.__
+__Please read the package vignette `inst/vigenettes/pgfSweave.pdf` for more information on installation and usage.__
 
 Also see [http://code.cjb.net/pgfSweave.html](http://code.cjb.net/pgfSweave.html) for a great example.
 
